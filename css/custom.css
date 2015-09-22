@@ -1,19 +1,26 @@
 /* line 1, ../sass/custom.scss */
 body {
-  background-color: #95395d;
+  background-color: #2a956d;
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+/* line 5, ../sass/custom.scss */
+body .main, body .bottom {
+  background: #7996ab;
+}
+/* line 7, ../sass/custom.scss */
+body .main ul.artistlist, body .bottom ul.artistlist {
+  margin: 1em;
+  padding: 1em;
+  list-style: none;
+}
+/* line 11, ../sass/custom.scss */
+body .main ul.artistlist li.artist, body .bottom ul.artistlist li.artist {
+  display: inline-block;
+  padding: 6px 12px;
 }
 
-/* line 6, ../sass/custom.scss */
-.artistlist {
-  background-color: #EEE8D5;
-  width: 50%;
-  border-radius: 0 0 20px 20px;
-  opacity: .95;
-  z-index: 10;
-}
-
-/* line 15, ../sass/custom.scss */
-.artist {
-  list-style-type: none;
-  text-decoration: none;
+/* line 20, ../sass/custom.scss */
+.bottom {
+  padding-left: 30px;
 }

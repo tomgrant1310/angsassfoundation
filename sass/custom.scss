@@ -1,18 +1,37 @@
 body{
-  background-color: #95395d;
+  background-color: #2a956d;
+  font:100% Helvetica, sans-serif;
+  color: #333;
+  .main {
+    background: #7996ab;
+    ul.artistlist {
+      margin: 1em;
+      padding: 1em;
+      list-style: none;
+      li.artist {
+        display: inline-block;
+        padding: 6px 12px;
+      }
+    }
+  }
 }
 
 
-.artistlist {
-  background-color: #EEE8D5;
-  width: 50%;
-  border-radius: 0 0 20px 20px;
-  opacity: .95;
-  z-index: 10;
+.bottom{
+  @extend .main;
+  padding-left:30px;
 }
 
-
-.artist {
-  list-style-type: none;
-  text-decoration: none;
-}
+//.artistlist {
+//  background-color: #EEE8D5;
+//  width: 50%;
+//  border-radius: 0 0 20px 20px;
+//  opacity: .95;
+//  z-index: 10;
+//}
+//
+//
+//.artist {
+//  list-style-type: none;
+//  text-decoration: none;
+//}

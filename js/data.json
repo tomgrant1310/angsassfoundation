@@ -8,16 +8,22 @@
   },
 
   {
-    "name"        : "John Grant",
+    "name"        : "George Grant",
     "shortname"   : "johngrant",
-    "reknown"     : "UkNetWeb",
+    "reknown"     : "Parc Eglos",
     "bio"         : "Web Developer"
   },
 
   {
-    "name"        : "Andy Grant",
+    "name"        : "Cicely Grant",
     "shortname"   : "andygrant",
-    "reknown"     : "UkNetWeb",
+    "reknown"     : "Parc Eglos",
     "bio"         : "Web Developer"
+  },
+  {
+    "name"        : "Mummy Grant",
+    "shortname"   : "andygrant",
+    "reknown"     : "Chocolate lady",
+    "bio"         : "Choclit"
   }
 ]
