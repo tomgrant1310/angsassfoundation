@@ -8,7 +8,54 @@
 
 <div id="tel">
     Telephone: <a href="tel:01621 734333">{{ (settings.destinationName == 'Jersey') && '01621 734333' || '01621
-    734555' }}</a>
+    734555' }}</a> travelsmith
+
+
+    <?php if(get_option(oisToSlug('TsBookingsSettings'))['phone_number']) : ?>
+    <p class="help-message">Problems booking online?<br>
+        Give us a call on:  <?= get_option(oisToSlug('TsBookingsSettings'))['phone_number']; ?></br>
+        Open 7 days a week.
+    </p>
+    <?php endif; ?>
+
+    <!--PHP offers an alternative syntax for some of its control structures; namely, if, while, for, foreach, and switch. In each case, the basic form of the alternate syntax is to change the opening brace to a colon (:) and the closing brace to endif;, endwhile;, endfor;, endforeach;, or endswitch;, respectively.-->
+
+    <!--<?php if ($a == 5): ?>-->
+    <!--A is equal to 5-->
+    <!--<?php endif; ?>-->
+
+    <!--In the above example, the HTML block "A is equal to 5" is nested within an if statement written in the alternative syntax. The HTML block would be displayed only if $a is equal to 5.-->
+
+
+
+<?php
+       $a = 5;
+
+if ($a == 5):
+    echo "a = 5 ";
+
+   else: echo " a is not equal to 5";
+   endif;
+
+
+
+   ?>
+
+    <script>
+
+        function sayHi(name){
+        name = name || "Dave";
+        alert("Hi " + name);
+        }
+
+        sayHi("Nathan"); // alerts "Hi Nathan";
+
+        sayHi(name); // alerts "Hi Dave", name is set to null when the function is started
+
+
+
+    </script>
+
 </div>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript and JSON</title>
+</head>
+<body>
+<h2>Links</h2>
+<ul id ="links">
+
+
+</ul>
+
+<script>
+
+    var info= {
+
+        "full_name" : "Ray Villalobos",
+        "title"     : "Staff Author",
+        "links"     : { //now an object
+            "blog": "http://viewsource.com",
+            "facebook": "http://facebook.com/ivewsource",
+            "Youtube": "http://www.youtube.com/panetof the web",
+            "podcast": "http://feeds.feedburner.com/authoredcontent"
+
+        }
+    };
+
+var output = "";
+
+    for (key in info.links) {
+        if (info.links.hasOwnProperty(key)) {
+            output += '<li>' +
+                      '<a href = "' + info.links[key] +
+                      '">' + key + '</a>' +
+                      '</li>';
+        }// if the link has the key property
+    }// for ...go through each link
+
+    var update = document.getElementById('links');
+    update.innerHTML = output;
+
+
+</script>
+
+</body>
+</html>
