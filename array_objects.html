@@ -17,7 +17,7 @@
 
         "full_name": "Ray Villalobos",
         "title":     "Staff Author",
-        "links":     [ //now an object
+        "links":     [ //now an array of objects
             {"blog":      "http://viewsource.com"},
             {"facebook":  "http://facebook.com/ivewsource"},
             {"Youtube":   "http://www.youtube.com/panetof the web"},
@@ -31,13 +31,41 @@ var output = '<h2>' + 'List of links in an ordered list' + '</h2>';
     for (var i = 0; i <= info.links.length; i++) {
         for (key in info.links[i]){
             if (info.links[i].hasOwnProperty(key)){
-                output += '<li>' + '<a href = >' + key + '</a>' + '</li>';
+                output += '<li>' + '<a href = "info.links[key]" >' + key + '</a>' + '</li>';
             }
         }
     }
 
     var update = document.getElementById('links');
     update.innerHTML = output;
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    console.log(typeof fruits);
+
+var myArray = ["saab", "Peugeot", "Ford"];
+
+    //or
+
+var myOtherArray = new Array("Cortina", "301", "Sunny");
+
+    var name = myOtherArray[1];
+
+    console.log(name);
+
+    var myObject = {
+        First:  "tomato",
+        Second: "carrot",
+        Third:  "parsnip"
+
+    }
+
+    var result = myObject.Second;
+    var result2= myObject["First"];
+
+    console.log(result);
+    console.log(result2);
+
 
 </script>
 
